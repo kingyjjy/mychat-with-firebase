@@ -1,0 +1,49 @@
+*{box-sizing: border-box;}
+html,body,#root{
+  height: 100vh;
+}
+#root{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow: hidden;
+}
+.container{
+  width:1000px;
+  height:800px;
+  max-width:100%;
+  position: relative;
+  background-color:#eaf2fc;
+  border-radius:15px;
+  padding:30px;
+  }
+.container-in{
+  width:100%;
+  height:100%;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.absolute{
+  position: absolute;
+}
+.container-in::-webkit-scrollbar{
+  width:8px;
+}
+.container-in::-webkit-scrollbar-thumb{
+  background-color: #ccc;
+}
+.container-in::-webkit-scrollbar-track{
+  background-color: rgba(255, 255, 255, 0.5);
+}
